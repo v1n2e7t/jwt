@@ -1,11 +1,11 @@
 {
-    "name": "lcobucci/jwt",
+    "name": "v1n2e7t/jwt",
     "description": "A simple library to work with JSON Web Token and JSON Web Signature",
     "type": "library",
     "authors": [
         {
-            "name": "Luís Otávio Cobucci Oblonczyk",
-            "email": "lcobucci@gmail.com",
+            "name": "v1n2e7t",
+            "email": "vincentrkahn@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Lcobucci\\JWT\\": "src"
+            "v1n2e7t\\JWT\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Lcobucci\\JWT\\": [
+            "v1n2e7t\\JWT\\": [
                 "test/unit",
                 "test/functional"
             ]
