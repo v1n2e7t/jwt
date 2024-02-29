@@ -1,14 +1,14 @@
 <?php
 /**
- * This file is part of Lcobucci\JWT, a simple library to handle JWT and JWS
+ * This file is part of v1n2e7t\JWT, a simple library to handle JWT and JWS
  *
  * @license http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  */
 
-namespace Lcobucci\JWT;
+namespace v1n2e7t\JWT;
 
-use Lcobucci\JWT\Claim\Factory as ClaimFactory;
-use Lcobucci\JWT\Parsing\Decoder;
+use v1n2e7t\JWT\Claim\Factory as ClaimFactory;
+use v1n2e7t\JWT\Parsing\Decoder;
 use RuntimeException;
 
 /**
@@ -57,7 +57,7 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @covers Lcobucci\JWT\Parser::__construct
+     * @covers v1n2e7t\JWT\Parser::__construct
      */
     public function constructMustConfigureTheAttributes()
     {
@@ -70,10 +70,10 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Parser::__construct
+     * @uses v1n2e7t\JWT\Parser::__construct
      *
-     * @covers Lcobucci\JWT\Parser::parse
-     * @covers Lcobucci\JWT\Parser::splitJwt
+     * @covers v1n2e7t\JWT\Parser::parse
+     * @covers v1n2e7t\JWT\Parser::splitJwt
      *
      * @expectedException InvalidArgumentException
      */
@@ -86,10 +86,10 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Parser::__construct
+     * @uses v1n2e7t\JWT\Parser::__construct
      *
-     * @covers Lcobucci\JWT\Parser::parse
-     * @covers Lcobucci\JWT\Parser::splitJwt
+     * @covers v1n2e7t\JWT\Parser::parse
+     * @covers v1n2e7t\JWT\Parser::splitJwt
      *
      * @expectedException InvalidArgumentException
      */
@@ -102,11 +102,11 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Parser::__construct
+     * @uses v1n2e7t\JWT\Parser::__construct
      *
-     * @covers Lcobucci\JWT\Parser::parse
-     * @covers Lcobucci\JWT\Parser::splitJwt
-     * @covers Lcobucci\JWT\Parser::parseHeader
+     * @covers v1n2e7t\JWT\Parser::parse
+     * @covers v1n2e7t\JWT\Parser::splitJwt
+     * @covers v1n2e7t\JWT\Parser::parseHeader
      *
      * @expectedException RuntimeException
      */
@@ -123,11 +123,11 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Parser::__construct
+     * @uses v1n2e7t\JWT\Parser::__construct
      *
-     * @covers Lcobucci\JWT\Parser::parse
-     * @covers Lcobucci\JWT\Parser::splitJwt
-     * @covers Lcobucci\JWT\Parser::parseHeader
+     * @covers v1n2e7t\JWT\Parser::parse
+     * @covers v1n2e7t\JWT\Parser::splitJwt
+     * @covers v1n2e7t\JWT\Parser::parseHeader
      *
      * @expectedException InvalidArgumentException
      */
@@ -144,14 +144,14 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Parser::__construct
-     * @uses Lcobucci\JWT\Token::__construct
+     * @uses v1n2e7t\JWT\Parser::__construct
+     * @uses v1n2e7t\JWT\Token::__construct
      *
-     * @covers Lcobucci\JWT\Parser::parse
-     * @covers Lcobucci\JWT\Parser::splitJwt
-     * @covers Lcobucci\JWT\Parser::parseHeader
-     * @covers Lcobucci\JWT\Parser::parseClaims
-     * @covers Lcobucci\JWT\Parser::parseSignature
+     * @covers v1n2e7t\JWT\Parser::parse
+     * @covers v1n2e7t\JWT\Parser::splitJwt
+     * @covers v1n2e7t\JWT\Parser::parseHeader
+     * @covers v1n2e7t\JWT\Parser::parseClaims
+     * @covers v1n2e7t\JWT\Parser::parseSignature
      *
      */
     public function parseMustReturnANonSignedTokenWhenSignatureIsNotInformed()
@@ -175,14 +175,14 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Parser::__construct
-     * @uses Lcobucci\JWT\Token::__construct
+     * @uses v1n2e7t\JWT\Parser::__construct
+     * @uses v1n2e7t\JWT\Token::__construct
      *
-     * @covers Lcobucci\JWT\Parser::parse
-     * @covers Lcobucci\JWT\Parser::splitJwt
-     * @covers Lcobucci\JWT\Parser::parseHeader
-     * @covers Lcobucci\JWT\Parser::parseClaims
-     * @covers Lcobucci\JWT\Parser::parseSignature
+     * @covers v1n2e7t\JWT\Parser::parse
+     * @covers v1n2e7t\JWT\Parser::splitJwt
+     * @covers v1n2e7t\JWT\Parser::parseHeader
+     * @covers v1n2e7t\JWT\Parser::parseClaims
+     * @covers v1n2e7t\JWT\Parser::parseSignature
      */
     public function parseShouldReplicateClaimValueOnHeaderWhenNeeded()
     {
@@ -210,15 +210,15 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Parser::__construct
-     * @uses Lcobucci\JWT\Token::__construct
-     * @uses Lcobucci\JWT\Signature::__construct
+     * @uses v1n2e7t\JWT\Parser::__construct
+     * @uses v1n2e7t\JWT\Token::__construct
+     * @uses v1n2e7t\JWT\Signature::__construct
      *
-     * @covers Lcobucci\JWT\Parser::parse
-     * @covers Lcobucci\JWT\Parser::splitJwt
-     * @covers Lcobucci\JWT\Parser::parseHeader
-     * @covers Lcobucci\JWT\Parser::parseClaims
-     * @covers Lcobucci\JWT\Parser::parseSignature
+     * @covers v1n2e7t\JWT\Parser::parse
+     * @covers v1n2e7t\JWT\Parser::splitJwt
+     * @covers v1n2e7t\JWT\Parser::parseHeader
+     * @covers v1n2e7t\JWT\Parser::parseClaims
+     * @covers v1n2e7t\JWT\Parser::parseSignature
      */
     public function parseMustReturnASignedTokenWhenSignatureIsInformed()
     {

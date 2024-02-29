@@ -1,14 +1,14 @@
 <?php
 /**
- * This file is part of Lcobucci\JWT, a simple library to handle JWT and JWS
+ * This file is part of v1n2e7t\JWT, a simple library to handle JWT and JWS
  *
  * @license http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  */
 
-namespace Lcobucci\JWT\Signer;
+namespace v1n2e7t\JWT\Signer;
 
-use Lcobucci\JWT\Keys;
-use Lcobucci\JWT\Signer\Ecdsa\MultibyteStringConverter;
+use v1n2e7t\JWT\Keys;
+use v1n2e7t\JWT\Signer\Ecdsa\MultibyteStringConverter;
 use const OPENSSL_ALGO_SHA256;
 use function openssl_pkey_get_private;
 use function openssl_pkey_get_public;
@@ -51,15 +51,15 @@ class EcdsaTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @covers \Lcobucci\JWT\Signer\Ecdsa::createHash
-     * @covers \Lcobucci\JWT\Signer\Ecdsa::getKeyType
-     * @covers \Lcobucci\JWT\Signer\Ecdsa\MultibyteStringConverter
-     * @covers \Lcobucci\JWT\Signer\OpenSSL
-     * @covers \Lcobucci\JWT\Signer\BaseSigner
+     * @covers \v1n2e7t\JWT\Signer\Ecdsa::createHash
+     * @covers \v1n2e7t\JWT\Signer\Ecdsa::getKeyType
+     * @covers \v1n2e7t\JWT\Signer\Ecdsa\MultibyteStringConverter
+     * @covers \v1n2e7t\JWT\Signer\OpenSSL
+     * @covers \v1n2e7t\JWT\Signer\BaseSigner
      *
-     * @uses \Lcobucci\JWT\Signer\Ecdsa::__construct
-     * @uses \Lcobucci\JWT\Signer\Key
-     * @uses \Lcobucci\JWT\Signature
+     * @uses \v1n2e7t\JWT\Signer\Ecdsa::__construct
+     * @uses \v1n2e7t\JWT\Signer\Key
+     * @uses \v1n2e7t\JWT\Signature
      */
     public function createHashShouldReturnTheAHashBasedOnTheOpenSslSignature()
     {
@@ -85,14 +85,14 @@ class EcdsaTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @covers \Lcobucci\JWT\Signer\Ecdsa::doVerify
-     * @covers \Lcobucci\JWT\Signer\Ecdsa::getKeyType
-     * @covers \Lcobucci\JWT\Signer\Ecdsa\MultibyteStringConverter
-     * @covers \Lcobucci\JWT\Signer\OpenSSL
-     * @covers \Lcobucci\JWT\Signer\BaseSigner
+     * @covers \v1n2e7t\JWT\Signer\Ecdsa::doVerify
+     * @covers \v1n2e7t\JWT\Signer\Ecdsa::getKeyType
+     * @covers \v1n2e7t\JWT\Signer\Ecdsa\MultibyteStringConverter
+     * @covers \v1n2e7t\JWT\Signer\OpenSSL
+     * @covers \v1n2e7t\JWT\Signer\BaseSigner
      *
-     * @uses \Lcobucci\JWT\Signer\Ecdsa::__construct
-     * @uses \Lcobucci\JWT\Signer\Key
+     * @uses \v1n2e7t\JWT\Signer\Ecdsa::__construct
+     * @uses \v1n2e7t\JWT\Signer\Key
      */
     public function doVerifyShouldDelegateToEcdsaSignerUsingPublicKey()
     {

@@ -1,11 +1,11 @@
 <?php
 /**
- * This file is part of Lcobucci\JWT, a simple library to handle JWT and JWS
+ * This file is part of v1n2e7t\JWT, a simple library to handle JWT and JWS
  *
  * @license http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  */
 
-namespace Lcobucci\JWT\Signer;
+namespace v1n2e7t\JWT\Signer;
 
 /**
  * @author Luís Otávio Cobucci Oblonczyk <lcobucci@gmail.com>
@@ -16,9 +16,9 @@ class KeychainTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signer\Key
+     * @uses v1n2e7t\JWT\Signer\Key
      *
-     * @covers Lcobucci\JWT\Signer\Keychain::getPrivateKey
+     * @covers v1n2e7t\JWT\Signer\Keychain::getPrivateKey
      */
     public function getPrivateKeyShouldReturnAKey()
     {
@@ -33,9 +33,9 @@ class KeychainTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signer\Key
+     * @uses v1n2e7t\JWT\Signer\Key
      *
-     * @covers Lcobucci\JWT\Signer\Keychain::getPublicKey
+     * @covers v1n2e7t\JWT\Signer\Keychain::getPublicKey
      */
     public function getPublicKeyShouldReturnAValidResource()
     {

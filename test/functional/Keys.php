@@ -1,7 +1,7 @@
 <?php
-namespace Lcobucci\JWT;
+namespace v1n2e7t\JWT;
 
-use Lcobucci\JWT\Signer\Keychain;
+use v1n2e7t\JWT\Signer\Keychain;
 
 /**
  * @author Luís Otávio Cobucci Oblonczyk <lcobucci@gmail.com>

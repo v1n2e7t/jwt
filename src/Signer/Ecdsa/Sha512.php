@@ -1,13 +1,13 @@
 <?php
 /**
- * This file is part of Lcobucci\JWT, a simple library to handle JWT and JWS
+ * This file is part of v1n2e7t\JWT, a simple library to handle JWT and JWS
  *
  * @license http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  */
 
-namespace Lcobucci\JWT\Signer\Ecdsa;
+namespace v1n2e7t\JWT\Signer\Ecdsa;
 
-use Lcobucci\JWT\Signer\Ecdsa;
+use v1n2e7t\JWT\Signer\Ecdsa;
 
 /**
  * Signer for ECDSA SHA-512

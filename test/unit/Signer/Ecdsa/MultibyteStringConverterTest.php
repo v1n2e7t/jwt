@@ -1,5 +1,5 @@
 <?php
-namespace Lcobucci\JWT\Signer\Ecdsa;
+namespace v1n2e7t\JWT\Signer\Ecdsa;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
@@ -8,7 +8,7 @@ use function hex2bin;
 use function strlen;
 
 /**
- * @coversDefaultClass \Lcobucci\JWT\Signer\Ecdsa\MultibyteStringConverter
+ * @coversDefaultClass \v1n2e7t\JWT\Signer\Ecdsa\MultibyteStringConverter
  */
 final class MultibyteStringConverterTest extends TestCase
 {

@@ -1,11 +1,11 @@
 <?php
 /**
- * This file is part of Lcobucci\JWT, a simple library to handle JWT and JWS
+ * This file is part of v1n2e7t\JWT, a simple library to handle JWT and JWS
  *
  * @license http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  */
 
-namespace Lcobucci\JWT\Signer\Ecdsa;
+namespace v1n2e7t\JWT\Signer\Ecdsa;
 
 /**
  * @author Luís Otávio Cobucci Oblonczyk <lcobucci@gmail.com>
@@ -16,10 +16,10 @@ class Sha256Test extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signer\Ecdsa
-     * @uses Lcobucci\JWT\Signer\OpenSSL
+     * @uses v1n2e7t\JWT\Signer\Ecdsa
+     * @uses v1n2e7t\JWT\Signer\OpenSSL
      *
-     * @covers Lcobucci\JWT\Signer\Ecdsa\Sha256::getAlgorithmId
+     * @covers v1n2e7t\JWT\Signer\Ecdsa\Sha256::getAlgorithmId
      */
     public function getAlgorithmIdMustBeCorrect()
     {
@@ -31,10 +31,10 @@ class Sha256Test extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signer\Ecdsa
-     * @uses Lcobucci\JWT\Signer\OpenSSL
+     * @uses v1n2e7t\JWT\Signer\Ecdsa
+     * @uses v1n2e7t\JWT\Signer\OpenSSL
      *
-     * @covers Lcobucci\JWT\Signer\Ecdsa\Sha256::getAlgorithm
+     * @covers v1n2e7t\JWT\Signer\Ecdsa\Sha256::getAlgorithm
      */
     public function getAlgorithmMustBeCorrect()
     {
@@ -46,10 +46,10 @@ class Sha256Test extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signer\Ecdsa
-     * @uses Lcobucci\JWT\Signer\OpenSSL
+     * @uses v1n2e7t\JWT\Signer\Ecdsa
+     * @uses v1n2e7t\JWT\Signer\OpenSSL
      *
-     * @covers Lcobucci\JWT\Signer\Ecdsa\Sha256::getKeyLength
+     * @covers v1n2e7t\JWT\Signer\Ecdsa\Sha256::getKeyLength
      */
     public function getKeyLengthMustBeCorrect()
     {

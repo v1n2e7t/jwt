@@ -1,11 +1,11 @@
 <?php
 /**
- * This file is part of Lcobucci\JWT, a simple library to handle JWT and JWS
+ * This file is part of v1n2e7t\JWT, a simple library to handle JWT and JWS
  *
  * @license http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  */
 
-namespace Lcobucci\JWT\Claim;
+namespace v1n2e7t\JWT\Claim;
 
 /**
  * @author Luís Otávio Cobucci Oblonczyk <lcobucci@gmail.com>
@@ -16,7 +16,7 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @covers Lcobucci\JWT\Claim\Factory::__construct
+     * @covers v1n2e7t\JWT\Claim\Factory::__construct
      */
     public function constructMustConfigureTheCallbacks()
     {
@@ -41,11 +41,11 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Claim\Factory::__construct
-     * @uses Lcobucci\JWT\Claim\Basic::__construct
+     * @uses v1n2e7t\JWT\Claim\Factory::__construct
+     * @uses v1n2e7t\JWT\Claim\Basic::__construct
      *
-     * @covers Lcobucci\JWT\Claim\Factory::create
-     * @covers Lcobucci\JWT\Claim\Factory::createLesserOrEqualsTo
+     * @covers v1n2e7t\JWT\Claim\Factory::create
+     * @covers v1n2e7t\JWT\Claim\Factory::createLesserOrEqualsTo
      */
     public function createShouldReturnALesserOrEqualsToClaimForIssuedAt()
     {
@@ -57,11 +57,11 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Claim\Factory::__construct
-     * @uses Lcobucci\JWT\Claim\Basic::__construct
+     * @uses v1n2e7t\JWT\Claim\Factory::__construct
+     * @uses v1n2e7t\JWT\Claim\Basic::__construct
      *
-     * @covers Lcobucci\JWT\Claim\Factory::create
-     * @covers Lcobucci\JWT\Claim\Factory::createLesserOrEqualsTo
+     * @covers v1n2e7t\JWT\Claim\Factory::create
+     * @covers v1n2e7t\JWT\Claim\Factory::createLesserOrEqualsTo
      */
     public function createShouldReturnALesserOrEqualsToClaimForNotBefore()
     {
@@ -73,11 +73,11 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Claim\Factory::__construct
-     * @uses Lcobucci\JWT\Claim\Basic::__construct
+     * @uses v1n2e7t\JWT\Claim\Factory::__construct
+     * @uses v1n2e7t\JWT\Claim\Basic::__construct
      *
-     * @covers Lcobucci\JWT\Claim\Factory::create
-     * @covers Lcobucci\JWT\Claim\Factory::createGreaterOrEqualsTo
+     * @covers v1n2e7t\JWT\Claim\Factory::create
+     * @covers v1n2e7t\JWT\Claim\Factory::createGreaterOrEqualsTo
      */
     public function createShouldReturnAGreaterOrEqualsToClaimForExpiration()
     {
@@ -89,11 +89,11 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Claim\Factory::__construct
-     * @uses Lcobucci\JWT\Claim\Basic::__construct
+     * @uses v1n2e7t\JWT\Claim\Factory::__construct
+     * @uses v1n2e7t\JWT\Claim\Basic::__construct
      *
-     * @covers Lcobucci\JWT\Claim\Factory::create
-     * @covers Lcobucci\JWT\Claim\Factory::createEqualsTo
+     * @covers v1n2e7t\JWT\Claim\Factory::create
+     * @covers v1n2e7t\JWT\Claim\Factory::createEqualsTo
      */
     public function createShouldReturnAnEqualsToClaimForId()
     {
@@ -105,11 +105,11 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Claim\Factory::__construct
-     * @uses Lcobucci\JWT\Claim\Basic::__construct
+     * @uses v1n2e7t\JWT\Claim\Factory::__construct
+     * @uses v1n2e7t\JWT\Claim\Basic::__construct
      *
-     * @covers Lcobucci\JWT\Claim\Factory::create
-     * @covers Lcobucci\JWT\Claim\Factory::createEqualsTo
+     * @covers v1n2e7t\JWT\Claim\Factory::create
+     * @covers v1n2e7t\JWT\Claim\Factory::createEqualsTo
      */
     public function createShouldReturnAnEqualsToClaimForIssuer()
     {
@@ -121,11 +121,11 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Claim\Factory::__construct
-     * @uses Lcobucci\JWT\Claim\Basic::__construct
+     * @uses v1n2e7t\JWT\Claim\Factory::__construct
+     * @uses v1n2e7t\JWT\Claim\Basic::__construct
      *
-     * @covers Lcobucci\JWT\Claim\Factory::create
-     * @covers Lcobucci\JWT\Claim\Factory::createEqualsTo
+     * @covers v1n2e7t\JWT\Claim\Factory::create
+     * @covers v1n2e7t\JWT\Claim\Factory::createEqualsTo
      */
     public function createShouldReturnAnEqualsToClaimForAudience()
     {
@@ -137,11 +137,11 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Claim\Factory::__construct
-     * @uses Lcobucci\JWT\Claim\Basic::__construct
+     * @uses v1n2e7t\JWT\Claim\Factory::__construct
+     * @uses v1n2e7t\JWT\Claim\Basic::__construct
      *
-     * @covers Lcobucci\JWT\Claim\Factory::create
-     * @covers Lcobucci\JWT\Claim\Factory::createEqualsTo
+     * @covers v1n2e7t\JWT\Claim\Factory::create
+     * @covers v1n2e7t\JWT\Claim\Factory::createEqualsTo
      */
     public function createShouldReturnAnEqualsToClaimForSubject()
     {
@@ -153,11 +153,11 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Claim\Factory::__construct
-     * @uses Lcobucci\JWT\Claim\Basic::__construct
+     * @uses v1n2e7t\JWT\Claim\Factory::__construct
+     * @uses v1n2e7t\JWT\Claim\Basic::__construct
      *
-     * @covers Lcobucci\JWT\Claim\Factory::create
-     * @covers Lcobucci\JWT\Claim\Factory::createBasic
+     * @covers v1n2e7t\JWT\Claim\Factory::create
+     * @covers v1n2e7t\JWT\Claim\Factory::createBasic
      */
     public function createShouldReturnABasiclaimForOtherClaims()
     {

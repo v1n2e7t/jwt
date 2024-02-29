@@ -1,13 +1,13 @@
 <?php
 /**
- * This file is part of Lcobucci\JWT, a simple library to handle JWT and JWS
+ * This file is part of v1n2e7t\JWT, a simple library to handle JWT and JWS
  *
  * @license http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  */
 
-namespace Lcobucci\JWT\Signer;
+namespace v1n2e7t\JWT\Signer;
 
-use Lcobucci\JWT\Signature;
+use v1n2e7t\JWT\Signature;
 
 /**
  * @author Luís Otávio Cobucci Oblonczyk <lcobucci@gmail.com>
@@ -34,7 +34,7 @@ class BaseSignerTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @covers Lcobucci\JWT\Signer\BaseSigner::modifyHeader
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::modifyHeader
      */
     public function modifyHeaderShouldChangeAlgorithm()
     {
@@ -49,11 +49,11 @@ class BaseSignerTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signature::__construct
-     * @uses Lcobucci\JWT\Signer\Key
+     * @uses v1n2e7t\JWT\Signature::__construct
+     * @uses v1n2e7t\JWT\Signer\Key
      *
-     * @covers Lcobucci\JWT\Signer\BaseSigner::sign
-     * @covers Lcobucci\JWT\Signer\BaseSigner::getKey
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::sign
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::getKey
      */
     public function signMustReturnANewSignature()
     {
@@ -70,11 +70,11 @@ class BaseSignerTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signature::__construct
-     * @uses Lcobucci\JWT\Signer\Key
+     * @uses v1n2e7t\JWT\Signature::__construct
+     * @uses v1n2e7t\JWT\Signer\Key
      *
-     * @covers Lcobucci\JWT\Signer\BaseSigner::sign
-     * @covers Lcobucci\JWT\Signer\BaseSigner::getKey
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::sign
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::getKey
      */
     public function signShouldConvertKeyWhenItsNotAnObject()
     {
@@ -89,11 +89,11 @@ class BaseSignerTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signature::__construct
-     * @uses Lcobucci\JWT\Signer\Key
+     * @uses v1n2e7t\JWT\Signature::__construct
+     * @uses v1n2e7t\JWT\Signer\Key
      *
-     * @covers Lcobucci\JWT\Signer\BaseSigner::verify
-     * @covers Lcobucci\JWT\Signer\BaseSigner::getKey
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::verify
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::getKey
      */
     public function verifyShouldDelegateTheCallToAbstractMethod()
     {
@@ -110,11 +110,11 @@ class BaseSignerTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @uses Lcobucci\JWT\Signature::__construct
-     * @uses Lcobucci\JWT\Signer\Key
+     * @uses v1n2e7t\JWT\Signature::__construct
+     * @uses v1n2e7t\JWT\Signer\Key
      *
-     * @covers Lcobucci\JWT\Signer\BaseSigner::verify
-     * @covers Lcobucci\JWT\Signer\BaseSigner::getKey
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::verify
+     * @covers v1n2e7t\JWT\Signer\BaseSigner::getKey
      */
     public function verifyShouldConvertKeyWhenItsNotAnObject()
     {

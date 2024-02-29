@@ -1,11 +1,11 @@
 <?php
 /**
- * This file is part of Lcobucci\JWT, a simple library to handle JWT and JWS
+ * This file is part of v1n2e7t\JWT, a simple library to handle JWT and JWS
  *
  * @license http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  */
 
-namespace Lcobucci\JWT\Parsing;
+namespace v1n2e7t\JWT\Parsing;
 
 /**
  * @author Luís Otávio Cobucci Oblonczyk <lcobucci@gmail.com>
@@ -16,7 +16,7 @@ class DecoderTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @covers Lcobucci\JWT\Parsing\Decoder::jsonDecode
+     * @covers v1n2e7t\JWT\Parsing\Decoder::jsonDecode
      */
     public function jsonDecodeMustReturnTheDecodedData()
     {
@@ -31,7 +31,7 @@ class DecoderTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @covers Lcobucci\JWT\Parsing\Decoder::jsonDecode
+     * @covers v1n2e7t\JWT\Parsing\Decoder::jsonDecode
      *
      * @expectedException \RuntimeException
      */
@@ -44,7 +44,7 @@ class DecoderTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      *
-     * @covers Lcobucci\JWT\Parsing\Decoder::base64UrlDecode
+     * @covers v1n2e7t\JWT\Parsing\Decoder::base64UrlDecode
      */
     public function base64UrlDecodeMustReturnTheRightData()
     {

@@ -1,8 +1,8 @@
 <?php
-namespace Lcobucci\JWT\Signer;
+namespace v1n2e7t\JWT\Signer;
 
 use InvalidArgumentException;
-use Lcobucci\JWT\Signer;
+use v1n2e7t\JWT\Signer;
 use function assert;
 use function is_array;
 use function is_resource;
